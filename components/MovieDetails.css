@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.movie_page{
+    height: 100vh;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: transparent;
+}
+
+.movie_Image_div{
+    height: 500px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    
+}
+.movie_details{
+    height: 500px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background: transparent;
+}
+.movie_image{
+    /* height: 300px; */
+    width: 200px;
+    margin: 10px;
+    background: transparent;
+    /* border: 1px solid white; */
+}.movie_details h3,h4,p,span{
+    background: transparent;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    /* background: transparent; */
+    background-color: rgba(51,51,51,0.5);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+}
+button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+
+iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+@media screen and (max-width:950px) {
+    .movie_page{
+        flex-direction: column;
+        background-color: black;
+        background-size: cover;
+        /* margin-left: 30px; */
+        
+    }
+    .movie_image{
+        width: 250px;
+    }
+}
+
+@media  screen and (max-width:400px) {
+    .movie_details h4{
+        font-size: 11px;
+    }
+    .movie_details h3{
+        font-weight: 15px;
+    }
+    .movie_image{
+        height: 200px;
+        width: 170px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .movie_image{
+        height: 250px;
+        width: 250px;
+    }
+    .movie_details h4{
+        height: 140px;
+        width: 290px;
+        /* border: 1px solid white; */
+        margin-right:30px ;
+        
+    }
+    /* .movie_details{
+        margin-left: -40px;
+    } */
+}
+@media screen and (max-width:415px){
+    .movie_details h4{
+        font-size: 14px;
+        height: 100px;
+    }
+    .movie_details{
+        margin-left: -70px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .movie_image{
+        height: 250px;
+        width: 190px;
+    }
+    .movie_details{
+        margin-left: -40px;
+    }
+    .movie_details h4{
+        height: 150px;
+        width: 200px;
+        /* border: 1px solid white; */
+        margin-right:30px ;
+        
+    }
+}
+
+@media screen and (max-width:380px) {
+    .movie_details{
+        margin-left: -100px;
+    }
+}
